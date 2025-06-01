@@ -8,7 +8,7 @@ if(isset($_FILES['image'])){
     if (move_uploaded_file($file_tmp, $upload_dir . $file_name)) {
         echo "Image uploaded successfully: <a href='uploads/$file_name'>$file_name</a>";
     } else {
-        echo "Failed to upload image.";
+
     }
 }
 ?>
