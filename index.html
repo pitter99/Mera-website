@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mera Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Mera Blog</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+    <nav id="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search blog..." onkeyup="searchPosts()" />
+    </div>
+  </header>
+
+  <main class="blog-list" id="blogList">
+    <article>
+      <h2>🌟 Pehla Post</h2>
+      <p>Yeh mera pehla blog post hai. Main Termux se website banana seekh raha hoon!</p>
+      <a href="#">Read More</a>
+    </article>
+
+    <article>
+      <h2>🔥 Dusra Post</h2>
+      <p>Aaj maine CSS ke baare mein kuch naya seekha. Styling is fun!</p>
+      <a href="#">Read More</a>
+    </article>
+
+    <article>
+      <h2>📱 JavaScript Basics</h2>
+      <p>JavaScript se hum site mein interaction laa sakte hain. Jaise search ya animation!</p>
+      <a href="#">Read More</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mera Blog | Termux se banaya gaya ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
