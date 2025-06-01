@@ -1,3 +1,7 @@
+fetch('/upload-endpoint', {
+  method: 'POST',
+  body: formData
+})
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('show');
@@ -12,3 +16,6 @@ function searchPosts() {
     post.style.display = text.includes(input) ? '' : 'none';
   });
 }
+app.post('/upload-endpoint', (req, res) => {
+  // image upload logic
+});
